@@ -1,0 +1,466 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "factory",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenB",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "owner_address",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "timelock_address",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "oldOwner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerChanged",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerNominated",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "ALLOW_STALE_CONSULTS",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "CONSULT_LENIENCY",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "PERIOD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "acceptOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "blockTimestampLast",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "canUpdate",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					}
+				],
+				"name": "consult",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "nominateNewOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nominatedOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pair",
+				"outputs": [
+					{
+						"internalType": "contract IUniswapV2Pair",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "price0Average",
+				"outputs": [
+					{
+						"internalType": "uint224",
+						"name": "_x",
+						"type": "uint224"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "price0CumulativeLast",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "price1Average",
+				"outputs": [
+					{
+						"internalType": "uint224",
+						"name": "_x",
+						"type": "uint224"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "price1CumulativeLast",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "_allow_stale_consults",
+						"type": "bool"
+					}
+				],
+				"name": "setAllowStaleConsults",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_consult_leniency",
+						"type": "uint256"
+					}
+				],
+				"name": "setConsultLeniency",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_period",
+						"type": "uint256"
+					}
+				],
+				"name": "setPeriod",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_timelock_address",
+						"type": "address"
+					}
+				],
+				"name": "setTimelock",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token0",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token1",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "update",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/oracle/UniswapPairOracle_Gr_USDT.sol": "UniswapPairOracle_Gr_USDT"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/math/Babylonian.sol": {
+			"keccak256": "0x0cd4356a7f2520f3855cbdb78fe933dc79673ec054341f9cfe93662742833557",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ee72f56cabfc73380d8202d832918aa80be95428d25f216410b76373d3f9befa",
+				"dweb:/ipfs/QmTzoNbXZxLrsgsLCHxmGLFL5t8B3rZfqsxhN4dUTJPhSM"
+			]
+		},
+		"contracts/math/FixedPoint.sol": {
+			"keccak256": "0x3a0ca013e75562cbbae975aa40d4e018d1803e1d483b82a12b025ea76dde1faf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3abe2223f9a598fff949b97902e25b4b62263be08b8460e21bb50f08a8c02cb9",
+				"dweb:/ipfs/QmX2dqGLYP9HQwyWUdUfv34kS2iGqruj8XXndoXx1ptFuX"
+			]
+		},
+		"contracts/math/SafeMath.sol": {
+			"keccak256": "0x0cd7df8f1ad184c2099262336ca342336a83575d8a5d14bef4ec9c765eb55ad9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3fbe5d25e29f8d22972c93aa238119ba8f72d14b35c998257baad0958a415bfa",
+				"dweb:/ipfs/QmcH7EfHex8BxT3fC9Pz3dg6vugVfxnoquXq3CFL9wSUax"
+			]
+		},
+		"contracts/oracle/UniswapPairOracle.sol": {
+			"keccak256": "0x79e6bd55781f2d41deee84f8730f29b62ffaa61cc023f333e4d4877078c2e322",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2ced10517f47813a93aed5fc679575400c0939e6b31db4c8d9b811124ddb32d6",
+				"dweb:/ipfs/QmadeJrAxku7LYJu5hkjhmhNWcPXz58cgqaseGz3un7NWa"
+			]
+		},
+		"contracts/oracle/UniswapPairOracle_Gr_USDT.sol": {
+			"keccak256": "0x1143cd93b8b7588edfb2955e00a180ebff8cf7bf2bd648cbe9aa355b2806ae2d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3683d611a6d06ef305831c42630ccfd2dce54ddd13ee7f67fa0d6d2d86494ecb",
+				"dweb:/ipfs/QmZft6jvbx47fCtoY5fSeMeEWbhmGBzcDtbcgiNsMFu5aF"
+			]
+		},
+		"contracts/uniswap/UniswapV2Library.sol": {
+			"keccak256": "0x701d38c3d59e77c0f50ce07255f843465c58f161ef51018ea55c2ef13937a720",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3f68b82a119d4f758d690311aa3429bbb6c2c1b4dc7e9344da33469bd15af90d",
+				"dweb:/ipfs/QmQNEchVeUGzzkoCpi2EVvAYp9dj2ANffBGUdhdehGz1z9"
+			]
+		},
+		"contracts/uniswap/UniswapV2OracleLibrary.sol": {
+			"keccak256": "0x5823733d524234675689bf9d2bcc16707e236ff99738c2096904fc0a1dc4200a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f517ec520162167d4344b4595fbf81a4ada84cdb696c7b0be1a191f86d1158f5",
+				"dweb:/ipfs/QmduRJDFMhBwxmwUnt8AWfwabDaLqb7XvpQ7hdm6pDdoCT"
+			]
+		},
+		"contracts/uniswap/interfaces/IUniswapV2Factory.sol": {
+			"keccak256": "0x446582602f592d4c82fbf33e48d07755ec23f90877cae6f747a2b1bfe5019a10",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1e366698d3133535467dc92e84db80e6665ea59b9943561661403f352fc4f104",
+				"dweb:/ipfs/QmQbjgPMbYsgJw67qifCdZKgs3mnozvWjGEuzQCDH2dfHD"
+			]
+		},
+		"contracts/uniswap/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0xb98d2ee9e2ebaa76e32f6890fba9aed2d1dbe3e58c5bcbaf95d39b69fcb9ca0b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5eaf8a9faeced29097e3d9b72eb9e394c21c0eb745bb564d6d405a448c95b681",
+				"dweb:/ipfs/QmUxYSVAapdfwU7kepvqzvAoEeBkztAdJMHTF9285UhBT6"
+			]
+		},
+		"contracts/utils/Owned.sol": {
+			"keccak256": "0x8c772f693ddc8843aa53ed91533c7ce1211ff350e92bb4888925eca1f0af8a53",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c427d2ff2929801aec2d77d2f321ca13cdd820888fc962d8a924bbcd8682fa46",
+				"dweb:/ipfs/QmRw5hoMwSygTjZMUxaJxzRrE4pvZCHMqJhqJLd5SiLEB8"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,386 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_creator_address",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_timelock_address",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_gr_gust_oracle",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_gust_busd_oracle",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_bnb_busd_oracle",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_gr",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_gu",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "oldOwner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerChanged",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerNominated",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "PRICE_PRECISION",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "acceptOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "busd",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					}
+				],
+				"name": "consult",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gu",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "nominateNewOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nominatedOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "bnb_busd_oracle",
+						"type": "address"
+					}
+				],
+				"name": "setBNBUSDOracle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "gr_gust_oracle",
+						"type": "address"
+					}
+				],
+				"name": "setGrGUSTOracle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "gust_busd_oracle",
+						"type": "address"
+					}
+				],
+				"name": "setGustBUSDOracle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "timelock_address",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "wbnb",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/oracle/GrOracleWrapper.sol": "GrOracleWrapper"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/math/Babylonian.sol": {
+			"keccak256": "0x0cd4356a7f2520f3855cbdb78fe933dc79673ec054341f9cfe93662742833557",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ee72f56cabfc73380d8202d832918aa80be95428d25f216410b76373d3f9befa",
+				"dweb:/ipfs/QmTzoNbXZxLrsgsLCHxmGLFL5t8B3rZfqsxhN4dUTJPhSM"
+			]
+		},
+		"contracts/math/FixedPoint.sol": {
+			"keccak256": "0x3a0ca013e75562cbbae975aa40d4e018d1803e1d483b82a12b025ea76dde1faf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3abe2223f9a598fff949b97902e25b4b62263be08b8460e21bb50f08a8c02cb9",
+				"dweb:/ipfs/QmX2dqGLYP9HQwyWUdUfv34kS2iGqruj8XXndoXx1ptFuX"
+			]
+		},
+		"contracts/math/SafeMath.sol": {
+			"keccak256": "0x0cd7df8f1ad184c2099262336ca342336a83575d8a5d14bef4ec9c765eb55ad9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3fbe5d25e29f8d22972c93aa238119ba8f72d14b35c998257baad0958a415bfa",
+				"dweb:/ipfs/QmcH7EfHex8BxT3fC9Pz3dg6vugVfxnoquXq3CFL9wSUax"
+			]
+		},
+		"contracts/oracle/GrOracleWrapper.sol": {
+			"keccak256": "0x8076a9f259f44e6c4f5020910e110da8735596a6175c8a5f9421c708c34f8b06",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b3b232d72f29bbe4025c43a1bbf7b2444bcf4d6f1ce48d7595dcb38bdd12b36a",
+				"dweb:/ipfs/QmQsp7rEb4iByyRv3GtkwKjiMYrf8dWm5NeFz1w5QwDY8C"
+			]
+		},
+		"contracts/oracle/UniswapPairOracle.sol": {
+			"keccak256": "0x692a9b076f0fd3afa8e59722afe6d3524216264451aa44541088e84dc4dd15e2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://44b9e2a7b326744c686741b9a9ee35b397d12a46d2d143b12a343efcfec41dc5",
+				"dweb:/ipfs/QmYR33H4H3hB9jBS8HF2JWgZwhKMQoLWBhkpsbbYybu6k9"
+			]
+		},
+		"contracts/oracle/interface/IChainlinkOracle.sol": {
+			"keccak256": "0x5ad34124e25328580ed5de60c1ca6fb260c9f07f7d2c2b2c97a265b422c5e821",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b7613c6fba484bf3063c9c1fa997f89314350170aaa18f6c8736afd51ef33fe1",
+				"dweb:/ipfs/QmYY8YzrP59a7HSVWh5xYY7sgyf3fTGuLeNVTqEm3XQYPe"
+			]
+		},
+		"contracts/uniswap/UniswapV2Library.sol": {
+			"keccak256": "0x04b43ecb4024b8b844f5fcf3e93781762f111581df44617788d07360f1fb2026",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b9c2f850fc66c37f05b57ada745cb5e2c978e117c84de6b8593c81a78ebbf475",
+				"dweb:/ipfs/Qmc7j4wU584vKTvDtZ67AUNw2QHuBkvoW1gjPsi4QtvC8R"
+			]
+		},
+		"contracts/uniswap/UniswapV2OracleLibrary.sol": {
+			"keccak256": "0x5823733d524234675689bf9d2bcc16707e236ff99738c2096904fc0a1dc4200a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f517ec520162167d4344b4595fbf81a4ada84cdb696c7b0be1a191f86d1158f5",
+				"dweb:/ipfs/QmduRJDFMhBwxmwUnt8AWfwabDaLqb7XvpQ7hdm6pDdoCT"
+			]
+		},
+		"contracts/uniswap/interfaces/IUniswapV2Factory.sol": {
+			"keccak256": "0x446582602f592d4c82fbf33e48d07755ec23f90877cae6f747a2b1bfe5019a10",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1e366698d3133535467dc92e84db80e6665ea59b9943561661403f352fc4f104",
+				"dweb:/ipfs/QmQbjgPMbYsgJw67qifCdZKgs3mnozvWjGEuzQCDH2dfHD"
+			]
+		},
+		"contracts/uniswap/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0xb98d2ee9e2ebaa76e32f6890fba9aed2d1dbe3e58c5bcbaf95d39b69fcb9ca0b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5eaf8a9faeced29097e3d9b72eb9e394c21c0eb745bb564d6d405a448c95b681",
+				"dweb:/ipfs/QmUxYSVAapdfwU7kepvqzvAoEeBkztAdJMHTF9285UhBT6"
+			]
+		},
+		"contracts/utils/Owned.sol": {
+			"keccak256": "0x8c772f693ddc8843aa53ed91533c7ce1211ff350e92bb4888925eca1f0af8a53",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c427d2ff2929801aec2d77d2f321ca13cdd820888fc962d8a924bbcd8682fa46",
+				"dweb:/ipfs/QmRw5hoMwSygTjZMUxaJxzRrE4pvZCHMqJhqJLd5SiLEB8"
+			]
+		}
+	},
+	"version": 1
+}

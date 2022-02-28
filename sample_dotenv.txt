@@ -1,0 +1,8 @@
+# API Keys
+#===========================
+ETHERSCAN_API_KEY='01openport'
+BSCSCAN_API_KEY='01openport'
+
+#PRIVATE KEY
+#==========================
+PRIVATE_KEY='01openport'
